@@ -56,5 +56,24 @@ for i in range(10):
     entry.grid(row=i, column=1, pady=5, ipady=3)
     entries.append(entry)
 
+    # ====== Pilihan jurusan (sesuai tampilan di foto) ======
+tk.Label(
+    root,
+    text="Pilihan Jurusan Anda:",
+    font=("Segoe UI", 10, "bold"),
+    bg=BG,
+    fg=FG,
+).grid(row=2, column=0, columnspan=3, pady=(20, 5))
+ 
+pilihan_jurusan = ttk.Combobox(
+    root,
+    values=["Teknologi Informasi", "Sistem Informasi", "Teknik Informatika"],
+    state="readonly",
+    width=22,
+)
+pilihan_jurusan.current(0)
+pilihan_jurusan.grid(row=3, column
+
+
 
 
