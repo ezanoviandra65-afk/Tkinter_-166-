@@ -14,4 +14,10 @@ root.geometry("460x720")
 root.configure(bg=BG)
 root.resizable(False, False)
 
+# Kolom 0 dan 2 melebar agar isi form berada di tengah
+root.columnconfigure(0, weight=1)
+root.columnconfigure(1, weight=0)
+root.columnconfigure(2, weight=1)
+
+
 
