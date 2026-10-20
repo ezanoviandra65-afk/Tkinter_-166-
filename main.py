@@ -78,6 +78,24 @@ pilihan_jurusan.grid(row=3, column=0, columnspan=3)
 def hasil_prediksi():
     # Apapun input yang diberikan, hasilnya selalu Teknologi Informasi
     label_hasil.config(text="Prediksi Prodi: Teknologi Informasi")
+
+    # ====== 3. Button Hasil Prediksi ======
+tombol = tk.Button(
+    root,
+    text="Hasil Prediksi",
+    font=("Segoe UI", 11, "bold"),
+    bg="#2B2B6B",
+    fg=FG,
+    activebackground="#1E1E50",
+    activeforeground=FG,
+    relief="raised",
+    padx=15,
+    pady=5,
+    command=hasil_prediksi,
+)
+tombol.grid(row=4, column=0, columnspan=3, pady=(25, 15))
+ 
+
  
  
 
