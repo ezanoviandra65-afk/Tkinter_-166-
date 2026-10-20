@@ -94,6 +94,19 @@ tombol = tk.Button(
     command=hasil_prediksi,
 )
 tombol.grid(row=4, column=0, columnspan=3, pady=(25, 15))
+
+# ====== 4. Label luaran hasil prediksi ======
+label_hasil = tk.Label(
+    root,
+    text="",
+    font=("Segoe UI", 13, "bold"),
+    bg=BG,
+    fg=ACCENT,
+)
+label_hasil.grid(row=5, column=0, columnspan=3, pady=10)
+ 
+root.mainloop()
+
  
 
  
