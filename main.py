@@ -72,7 +72,17 @@ pilihan_jurusan = ttk.Combobox(
     width=22,
 )
 pilihan_jurusan.current(0)
-pilihan_jurusan.grid(row=3, column
+pilihan_jurusan.grid(row=3, column=0, columnspan=3)
+ 
+# ====== Fungsi Hasil Prediksi ======
+def hasil_prediksi():
+    # Apapun input yang diberikan, hasilnya selalu Teknologi Informasi
+    label_hasil.config(text="Prediksi Prodi: Teknologi Informasi")
+ 
+ 
+
+
+    
 
 
 
